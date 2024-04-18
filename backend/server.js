@@ -62,7 +62,7 @@ io.of("/api/audit").on('connection', (socket) => {
       // Get the room ID associated with the random socket ID
       const room = connectedUsers[randomSocketId];
       // Emit a sample message to the room
-      io.of("/api/audit").to(room).emit('message', 'This is a sample message.');
+      io.of("/api/audit").to(room).emit('message', 'This is a sample message. Hello testing');
     }
   };
   // Example: Sending a sample message to a random room
